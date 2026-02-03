@@ -28,7 +28,7 @@ jobs:
           python-version: "3.11"
       # - name: Needed Applications and Libraries are already satisfied.
       - name: Conan 1.x
-        run: pip install "conan<2.0"
+        run: pip install conan
       - name: matplotlib
         run: pip install matplotlib
       - name: numpy
