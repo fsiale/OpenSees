@@ -55,3 +55,4 @@ jobs:
             name: OpenSees_Ubuntu
             path: |
               ground_motion.png
+              disp.out
