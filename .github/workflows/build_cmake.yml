@@ -10,7 +10,7 @@ on:
   workflow_dispatch:
 
 env:
-  PYTHONPATH: "./build/lib/:./mylib/"
+  PYTHONPATH: "./build/Release"
 
 jobs:
   build-ubuntu:
