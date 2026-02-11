@@ -138,6 +138,7 @@ UniformDamping::Initialize(void)
   nFilter = 2;
   for (int iter = 0; iter < 100; ++iter)
   {
+    int nf = 100 * nFilter;
     double dfreq = (f2log - f1log) / (nFilter - 1);
     if (alpha) delete alpha;
     if (omegac) delete omegac;
