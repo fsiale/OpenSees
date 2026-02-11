@@ -29,4 +29,4 @@ plt.grid()
 plt.show()
 
 #######
-plt.savefig('./build/lib/ground_motion.png')
+plt.savefig('./build/Release/ground_motion.png')
