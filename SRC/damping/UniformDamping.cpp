@@ -138,7 +138,6 @@ UniformDamping::Initialize(void)
   nFilter = 2;
   for (int iter = 0; iter < 100; ++iter)
   {
-    int nf = 100 * nFilter;
     double dfreq = (f2log - f1log) / (nFilter - 1);
     if (alpha) delete alpha;
     if (omegac) delete omegac;
@@ -180,6 +179,8 @@ UniformDamping::Initialize(void)
     delete psi;
 
     bool converged = true;
+    int nf = 100 * nFilter;
+    double df = (f2log - f1log) / (nf - 1);
     for (int i = 0; i < nf; ++i)
     {
       double omega = pi * pow(10.0, f1log + i * df);
